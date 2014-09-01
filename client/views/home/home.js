@@ -23,39 +23,31 @@ Template.home.helpers({
   },
   'consoleCommand' : function () {
     return [
-      { 'command' : 'change:profile', 'description' : 'Change script profile to coffeescript if wished.' },
-      { 'command' : 'create:view', 'description' : 'Creates a folder under client/views with html, less and javascript files.' },
-      { 'command' : 'create:module', 'description' : 'Similiar to a view, but under client/modules and for re-usable components' },
-      { 'command' : 'create:layout', 'description' : 'Creates a layout template which yields your content, used by iron-router' },
-      { 'command' : 'create:common', 'description' : 'Creates a simple html file under client/views/common' },
-      { 'command' : 'create:route', 'description' : 'Creates a route javascript file under client/routes' },
-      { 'command' : 'create:model', 'description' : 'Creates a model with files in model/, client/subscriptions and server/publications' },
-      { 'command' : 'create:less', 'description' : 'Creates a less stylesheet in client/stylesheets' },
-      { 'command' : 'create:test', 'description' : 'Creates a velocity test file under tests' },
-      { 'command' : 'reset:project', 'description' : 'Removes all unnecessary files, perfect for a fresh start' }
+      { 'command' : 'Blog', 'description' : 'Create a custom platform to share your thoughts and stories.' },
+      { 'command' : 'Shopping Cart', 'description' : 'Sell your products online, fast and secure.' },
+      { 'command' : 'Automation', 'description' : 'Elimate repetiveness from your business, thats what computers are for!' },
+      { 'command' : 'Portfolio', 'description' : 'Showcase your creativity and acumen with custom-built web app.' },
+      { 'command' : 'Foundation', 'description' : 'Support a cause or your own on-going fundraising.' },
+      { 'command' : 'LEARN!', 'description' : 'Build something with the most innovative tools on the Internet.  Add valuable skills to your resume.' }
     ];
   },
   'semanticElement' : function () {
     return [
-      { 'what' : 'Large Buttons', 'withBootstrap' : 'btn btn-lg', 'withSemanticUI' : 'ui large button' },
-      { 'what' : 'One column', 'withBootstrap' : 'col-md-1', 'withSemanticUI' : 'one wide column' },
-      { 'what' : 'Vertical Menu / Navigation', 'withBootstrap' : 'nav nav-pills', 'withSemanticUI' : 'ui vertical menu' }
+      { 'what' : 'Jacks Snacks', 'withBootstrap' : 'McMaster', 'withSemanticUI' : 'Wendys' },
+      { 'what' : 'Pizza Pizza', 'withBootstrap' : 'Innovation Park', 'withSemanticUI' : 'TSN' },
+      { 'what' : 'Tim Hortons', 'withBootstrap' : 'Other', 'withSemanticUI' : 'Rogers' }
 
     ];
-  },
-  'bootstrapCode' : function () {
-    return '<div class="btn btn-primary btn-lg"></div>';
   },
   'folder' : function () {
     return [
       { 'root' : 'client', 'children' :
-        ['compatibility', 'config', ' lib', ' routes', ' startup', ' stylesheets', 'subscriptions',
+        ['Templates', ' routes', ' startup', ' stylesheets', 'subscriptions',
           'modules', 'views']
       },
-      { 'root' : 'model' },
-      { 'root' : 'private' },
-      { 'root' : 'server', 'children' : ['fixtures', 'lib', 'publications', 'startup'] },
-      { 'root' : 'public' },
+      { 'root' : 'server' },
+      { 'root' : 'command line' },
+      { 'root' : 'git', 'children' : ['fixtures', 'lib', 'publications', 'startup'] },
       { 'root' : 'meteor-boilerplate' }
     ]
   }
