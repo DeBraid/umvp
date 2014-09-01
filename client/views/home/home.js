@@ -1,10 +1,10 @@
 Template.home.helpers({
   'feature' : function () {
     return [
-      { 'text' : 'Uses trusted packages', 'icon' : 'archive', 'path' : '#packages' },
-      { 'text' : 'Has a console tool', 'icon' : 'terminal', 'path' : '#console-tool' },
-      { 'text' : 'Embraces HTML5', 'icon' : 'html5', 'color' : 'hover-orange', 'path' : '#html5' },
-      { 'text' : 'Provides a structure', 'icon' : 'folder', 'path' : '#structure' }
+      { 'text' : 'Modern Web Development', 'icon' : 'archive', 'path' : '#packages' },
+      { 'text' : 'Rapid Prototyping', 'icon' : 'terminal', 'path' : '#console-tool' },
+      { 'text' : 'Blogging & Social Media', 'icon' : 'html5', 'color' : 'hover-orange', 'path' : '#html5' },
+      { 'text' : 'Real-time & Responsive', 'icon' : 'folder', 'path' : '#structure' }
     ]
   },
   'package' : function () {
