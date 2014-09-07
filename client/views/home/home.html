@@ -10,26 +10,39 @@
         {{/each}}
     </div>
 
-    <div id="packages" class="main-content padding-wrapper">
+    <div id="html5" class="main-content padding-wrapper">
         <div class="ui fitted horizontal icon divider"><i class="magic icon"></i></div>
         <div class="ui two column stackable grid">
             <div class="middle aligned row">
                 <div class="center aligned column">
                     <div class="center aligned icon-wrapper">
-                        <i class="circular massive red archive icon"></i>
+                        <i class="circular massive orange html5 icon"></i>
                     </div>
                 </div>
                 <div class="column">
-                    <h3 class="large ui header">Meteor JS <div class="sub header">Don't reinvent the wheel</div></h3>
-                    <p>Meteor JS is javascript full-stack web application developement framework.  It is easy to use, remarkably powerful and beginner-friendly.</p>
-                    <div class="ui list">
-                        {{#each package}}
-                            <a href="{{path}}" class="item no-underline link">
-                                <i class="archive icon"></i>
-                                {{name}}
-                            </a>
+                    <h2 class="large ui header">UVMP Workshop: Build and Learn <div class="sub header">by Derek Braid and Alex Pineda</div></h2>
+                    <p>
+                        We are hosting the seminar at McMaster Innovation Park, September 99th, 2014.
+                    </p>
+                    <h4>Thank you to our sponsors:</h4>
+                    <table class="ui basic table">
+                        <thead>
+                        <tr>
+                            <th>Food</th>
+                            <th>Venue</th>
+                            <th>Corporate</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {{#each semanticElement}}
+                        <tr>
+                            <td>{{what}}</td>
+                            <td>{{withBootstrap}}</td>
+                            <td>{{withSemanticUI}}</td>
+                        </tr>
                         {{/each}}
-                    </div>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
@@ -41,6 +54,7 @@
             <div class="middle aligned row">
                 <div class="column">
                     <h3 class="large ui header">Rapid Prototyping <div class="sub header">Bring your ideal or prodcut to market now!</div></h3>
+
                     <p>
                         To speed and simplicity of Meteor JS allows anyone to build the web page they've always wanted.  <br />
                         Using a foundation built by node.js community, Meteor is the next step in modern web development.  Learn it here, build your dream.
@@ -73,43 +87,31 @@
         </div>
     </div>
 
-    <div id="html5" class="main-content padding-wrapper">
+    <div id="packages" class="main-content padding-wrapper">
         <div class="ui fitted horizontal icon divider"><i class="magic icon"></i></div>
         <div class="ui two column stackable grid">
             <div class="middle aligned row">
                 <div class="center aligned column">
                     <div class="center aligned icon-wrapper">
-                        <i class="circular massive orange html5 icon"></i>
+                        <i class="circular massive red archive icon"></i>
                     </div>
                 </div>
                 <div class="column">
-                    <h3 class="large ui header">UVMP Workshop <div class="sub header">by Derek Braid and Alex Pineda</div></h3>
-                    <p>
-                        We are hosting the seminar at McMaster Innovation Park, September 99th, 2014.
-                    </p>
-                    <h4>Thank you to our sponsors:</h4>
-                    <table class="ui basic table">
-                        <thead>
-                        <tr>
-                            <th>Food</th>
-                            <th>Venue</th>
-                            <th>Corporate</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        {{#each semanticElement}}
-                        <tr>
-                            <td>{{what}}</td>
-                            <td>{{withBootstrap}}</td>
-                            <td>{{withSemanticUI}}</td>
-                        </tr>
+                    <h3 class="large ui header">Meteor JS <div class="sub header">Don't reinvent the wheel</div></h3>
+                    <p>Meteor JS is javascript full-stack web application developement framework.  It is easy to use, remarkably powerful and beginner-friendly.</p>
+                    <div class="ui list">
+                        {{#each package}}
+                            <a href="{{path}}" class="item no-underline link">
+                                <i class="archive icon"></i>
+                                {{name}}
+                            </a>
                         {{/each}}
-                        </tbody>
-                    </table>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
 
     <div id="structure" class="main-content padding-wrapper">
         <div class="ui fitted horizontal icon divider"><i class="magic icon"></i></div>

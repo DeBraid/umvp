@@ -1,9 +1,9 @@
 Template.home.helpers({
   'feature' : function () {
     return [
+      { 'text' : 'Join Us', 'icon' : 'html5', 'color' : 'hover-orange', 'path' : '#html5' },
       { 'text' : 'Modern Web Development', 'icon' : 'archive', 'path' : '#packages' },
       { 'text' : 'Rapid Prototyping', 'icon' : 'terminal', 'path' : '#console-tool' },
-      { 'text' : 'Blogging & Social Media', 'icon' : 'html5', 'color' : 'hover-orange', 'path' : '#html5' },
       { 'text' : 'Real-time & Responsive', 'icon' : 'folder', 'path' : '#structure' }
     ]
   },
@@ -45,7 +45,7 @@ Template.home.helpers({
         ['Templates', ' routes', ' startup', ' stylesheets', 'subscriptions',
           'modules', 'views']
       },
-      { 'root' : 'server' },
+      { 'root' : 'server', 'children' : ['node.js', 'web sockets', 'publications'] },
       { 'root' : 'command line' },
       { 'root' : 'git', 'children' : ['fixtures', 'lib', 'publications', 'startup'] },
       { 'root' : 'meteor-boilerplate' }
